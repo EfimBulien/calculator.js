@@ -10,8 +10,7 @@ function displaySymbol(input) {
 
 function calculate(){
     try{
-        const sanitizedInput = display.value.replace(/[^\d.+*/()-]/g, "");
-        display.value = eval(sanitizedInput);
+        display.value = eval(display.value);
     }
     catch(error) {
         clearDisplay();
